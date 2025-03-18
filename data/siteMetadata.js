@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://www.vizworkshop.com',
   siteRepo: 'https://github.com/PaulHax/vizworkshop',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  // socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   // mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'paul@vizworkshop.com',
   github: 'https://github.com/paulhax',

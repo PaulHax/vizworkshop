@@ -1,0 +1,57 @@
+---
+title: VR in Projectors + Headsets + Phones
+date: '2020-08-15'
+tags: []
+draft: false
+summary: Experiment using phones to interact with 3D models across monitors, projectors, and headsets
+---
+
+![Standing With Screens](/static/images/seamless/standing-with-screens.jpg)
+
+The user experience of making 3D models on the desktop and experiencing them in VR is filled with friction. In 2014 I started making software addressing the problems of using VR in a 3D design process.
+
+<iframe
+  className="mx-auto"
+  width="560"
+  height="315"
+  title="VizWorkshop Demo"
+  src="https://www.youtube-nocookie.com/embed/TLr6f9FNrfI?start=19"
+  frameBorder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+### Context Switches Bad, Flow Good
+
+For VR to help people create and analyze 3D models, we need to minimize the context switch cost from the desktop to a VR experience of our 3D work. Tightening the design + feedback loop encourages:
+
+- Fast testing
+- Focus on end result
+- Design exploration
+
+### Desktop to VR Transition
+
+We need a seamless transition from making a change in our 3D modeling program to interacting with the result on a headset or projection system. Ideally we tweek our 3D model on the desktop, then simply look left at our 1 to 1 scale projection system or bring a strapless headset up to our eyes.
+
+This software uses an app on mobile phones so we can quickly start interacting with the projection system or review the 3D model with Google Cardboard.
+
+### 3D Model Iteration
+
+Designers want to quickly see the full scale result of their 3D modeling. The desktop content creation application, be it Maya, Revit or Soldworks, is the single source of truth. Moving 3D models from the desktop to the VR system is painful, but there are supported workflows. Support for tweaking the 3D data in VR, and bringing it back into the authoring application is practically non-existent. With mouse and keyboard emulation on via the VR controls, designers can modify the model in the original design application and try a 3D model in VR without putting down the VR interface.
+
+This experiment speeds up design feedback loops by making the mobile phone a remote control for the desktop’s keyboard and mouse. Designers can make 3D model adjustments without leaving VR and incurring the desktop/VR context switch cost.
+
+### Display and Tracking System
+
+The monitors and projectors act like windows on the virtual world. Arrays of screens, or using big projections can give a good sense of immersion without the friction of putting on a headset. It's nice to collaborate face to face. Yhe mobile phone calibrates the size and positions of the displays.
+
+To interact with the 3D data in VR, the system has an app for mobile phones. The phone acts as a 6DOF virtual reality controller with the augmented reality tracking library Vuforia.
+
+Phones or tablets can act as mobile windows on the virtual world. The positions of phones are coordinated with the computer screens. Folks can quickly experience the virtual world in real scale 3D by activating Google Cardboard on a phone.
+
+<div className="flex flex-row flex-wrap justify-center gap-4">
+  <img className="flex-initial" alt="3D Control" src="/static/images/seamless/3d_control.gif" />
+  <img className="flex-initial" alt="Mouse Control" src="/static/images/seamless/mouse.gif" />
+  <img className="flex-initial" alt="Keyboard Control" src="/static/images/seamless/keyboard.gif" />
+  <img className="flex-initial" alt="VR Headset" src="/static/images/seamless/headset.gif" />
+</div>
